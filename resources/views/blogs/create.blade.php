@@ -60,6 +60,7 @@
                     </form>
                 </div>
         @else
+        <p style="text-align:center">Please login/Register to add blogs</p>
                 <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
                             
                 @if (Route::has('register'))
