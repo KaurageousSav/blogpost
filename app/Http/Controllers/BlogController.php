@@ -31,7 +31,7 @@ class BlogController extends Controller
     public function show(blogs $blogs):View{
         return view('blogs.show',[
             'content'=>$blogs->content,
-            'comments'=>$blogs->comments()
+            'comments'=>$blogs->comments()->paginate(5)
         ]);
     }
 
